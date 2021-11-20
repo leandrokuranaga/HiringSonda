@@ -1,0 +1,42 @@
+﻿@model IEnumerable<HiringSonda.Domain.Models.User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h1>Nome dos usuários</h1>
+
+    <p supress-by-claim-name="Usuário" supress-by-claim-value="Adicionar">
+    <a asp-area="" asp-controller="User" asp-action="Register" class="btn btn-primary">Adicionar usuário</a>
+</p>
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>          
+            <th>
+                <p>Visualizar detalhes</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td class="text-right">
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search">Visualizar</spam></a>          
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+</div>
+

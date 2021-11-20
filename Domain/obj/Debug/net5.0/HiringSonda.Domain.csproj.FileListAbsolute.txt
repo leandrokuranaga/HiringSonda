@@ -1,0 +1,12 @@
+D:\Projeto\HiringSonda\Domain\bin\Debug\net5.0\HiringSonda.Domain.deps.json
+D:\Projeto\HiringSonda\Domain\bin\Debug\net5.0\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\Domain\bin\Debug\net5.0\ref\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\Domain\bin\Debug\net5.0\HiringSonda.Domain.pdb
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.AssemblyInfoInputs.cache
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.AssemblyInfo.cs
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.csproj.CoreCompileInputs.cache
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\ref\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.pdb
+D:\Projeto\HiringSonda\Domain\obj\Debug\net5.0\HiringSonda.Domain.csproj.AssemblyReference.cache

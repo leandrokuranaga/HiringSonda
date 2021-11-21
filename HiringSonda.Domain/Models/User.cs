@@ -8,16 +8,17 @@ namespace HiringSonda.Domain.Models
     public class User : Entity
     {
         [DisplayName("Nome Completo")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string FullName { get; set; }
         [DisplayName("Data Nascimento")]
-        [Required]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public DateTime BirthDate { get; set; }
         [DisplayName("CPF")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string CPF { get; set; }
         [DisplayName("Email")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string Email { get; set; }
         public AddressUser addressUser { get; set; }
     }

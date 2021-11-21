@@ -8,22 +8,22 @@ namespace HiringSonda.Domain.Models
     public class AddressUser : Entity
     {
         [DisplayName("CEP")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string CEP { get; set; }
         [DisplayName("Logradouro")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string Street { get; set; }
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         [DisplayName("Complemento")]
         public string Complement { get; set; }
         [DisplayName("Bairro")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string Neighborhood { get; set; }
         [DisplayName("Cidade")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string City { get; set; }
         [DisplayName("Estado")]
-        [Required]
+        [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string State { get; set; }
 
         public User user { get; set; }

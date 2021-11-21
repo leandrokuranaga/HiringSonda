@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj": {}
+    "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj": {}
   },
   "projects": {
-    "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj": {
+    "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj",
+        "projectUniqueName": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
         "projectName": "HiringSonda.Domain",
-        "projectPath": "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj",
+        "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\HiringSonda\\Domain\\obj\\",
+        "outputPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
+    "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
+        "projectUniqueName": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
         "projectName": "HiringSonda.Infra",
-        "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
+        "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\obj\\",
+        "outputPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj": {
-                "projectPath": "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj"
+              "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
+                "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj": {
+    "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
+        "projectUniqueName": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
         "projectName": "HiringSonda",
-        "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
+        "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\HiringSonda\\HiringSonda\\obj\\",
+        "outputPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -175,11 +175,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj": {
-                "projectPath": "D:\\Projeto\\HiringSonda\\Domain\\HiringSonda.Domain.csproj"
+              "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
+                "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj"
               },
-              "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
-                "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj"
+              "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
+                "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj"
               }
             }
           }
@@ -221,6 +221,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.1.2, )"
             }
           },
           "imports": [

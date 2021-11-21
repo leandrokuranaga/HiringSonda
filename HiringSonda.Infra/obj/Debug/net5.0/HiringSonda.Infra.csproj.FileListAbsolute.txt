@@ -13,3 +13,18 @@ D:\Projeto\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.cspr
 D:\Projeto\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.dll
 D:\Projeto\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\ref\HiringSonda.Infra.dll
 D:\Projeto\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.pdb
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Infra.deps.json
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Infra.dll
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\ref\HiringSonda.Infra.dll
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Infra.pdb
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Domain.dll
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Domain.pdb
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.csproj.AssemblyReference.cache
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.AssemblyInfoInputs.cache
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.AssemblyInfo.cs
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.csproj.CoreCompileInputs.cache
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.csproj.CopyComplete
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.dll
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\ref\HiringSonda.Infra.dll
+D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.pdb

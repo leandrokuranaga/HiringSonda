@@ -1,28 +1,27 @@
 ﻿@model IEnumerable<HiringSonda.Domain.Models.User>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Usuários";
 }
-
 <div class="text-center">
-
-    <h1>Nome dos usuários</h1>
-
-    <p supress-by-claim-name="Usuário" supress-by-claim-value="Adicionar">
-    <a asp-area="" asp-controller="User" asp-action="Register" class="btn btn-primary">Adicionar usuário</a>
-</p>
-
+    <h1>Usuários Cadastrados</h1>
+    <br />
+</div>
 <table class="table table-hover">
     <thead class="thead-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.FullName)
-            </th>          
-            <th>
-                <p>Visualizar detalhes</p>
             </th>
+            <th></th>
         </tr>
     </thead>
+    <div class="d-flex justify-content-between">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-danger" style="height:40px;padding-bottom:30px">Voltar</a>
+        <p supress-by-claim-name="Usuário" supress-by-claim-value="Adicionar">
+            <a asp-area="" asp-controller="User" asp-action="Register" class="btn btn-primary">Adicionar usuário</a>
+        </p>
+    </div>
     <tbody>
         @foreach (var item in Model)
         {
@@ -31,12 +30,9 @@
                     @Html.DisplayFor(modelItem => item.FullName)
                 </td>
                 <td class="text-right">
-                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search">Visualizar</spam></a>          
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search">Visualizar</spam></a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
-
-</div>
-

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
       <PrivateAssets>all</PrivateAssets>
@@ -20,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\HiringSonda.Domain.csproj" />
+    <ProjectReference Include="..\HiringSonda.Domain\HiringSonda.Domain.csproj" />
     <ProjectReference Include="..\HiringSonda.Infra\HiringSonda.Infra.csproj" />
   </ItemGroup>
 

@@ -1,13 +1,11 @@
 ﻿@model HiringSonda.Domain.Models.User
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes do usuário";
 }
 
-<h1>View</h1>
-
 <div>
-    <h4>User</h4>
+    <h4>Usuário - @Html.DisplayFor(model => model.FullName)</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -34,10 +32,9 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
-        <partial name="_DetalheEndereco" />
-
+            <partial name="_DetalheEndereco" />
     </dl>
 </div>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-danger">Voltar</a>
 </div>

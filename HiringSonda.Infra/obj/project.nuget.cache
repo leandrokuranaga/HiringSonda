@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vs7JpKr64XNEGQSWFqQkgDKBFzBPn3zV9YHeMT3qLPpXwYM/hqkgaEiumoA/54al1WPTQCObqweJDo/h9hRq6g==",
+  "dgSpecHash": "teL24pZNeRWr/Xrb+gdQ34rVa0/0sFy5Z08Ld9Pnprq78GNBkabJQdJjJAoXfUiJSAG7S5HqV5AbVFjN5vKlcQ==",
   "success": true,
-  "projectFilePath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
+  "projectFilePath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

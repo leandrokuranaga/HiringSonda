@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\HiringSonda.Domain.csproj" />
+    <ProjectReference Include="..\HiringSonda.Domain\HiringSonda.Domain.csproj" />
   </ItemGroup>
 
 </Project>

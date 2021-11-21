@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "b3akoKiUNKBq4d/KZ+9IfyjOZp80l6kbOZKiDT1Cjl38Giw9oDer0W8ZbxPC0kZfSx2CyeAQZ/P6Rv/FqLwQ5A==",
+  "dgSpecHash": "m5nPod0YGBTj/9XUuPIerJ8IzZXhUicBYV8f/lMJGYzOw0BUCWQvGlw5W3RFflvgKRmoY9Xv7WVO7LU/BigBQg==",
   "success": true,
-  "projectFilePath": "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
+  "projectFilePath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Leandro\\.nuget\\packages\\bootstrap\\5.1.2\\bootstrap.5.1.2.nupkg.sha512",
     "C:\\Users\\Leandro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Leandro\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

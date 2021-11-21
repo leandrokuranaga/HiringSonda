@@ -14,12 +14,12 @@ namespace HiringSonda.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Challenge()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Index()
         {
             return View();
         }

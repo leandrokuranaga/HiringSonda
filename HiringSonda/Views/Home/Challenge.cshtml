@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Desafio";
+}
+
+<h1 id="formul-rio-de-cadastro-de-usu-rio">Formulário de Cadastro de Usuário</h1>
+<p>Desenvolver uma aplicação utilizando ASP.NET Core MVC, esta aplicação deverá ter três páginas.</p>
+<h2 id="p-gina-1">Página 1</h2>
+<ul>
+<li>Formulário de Cadastro de Usuário *</li>
+</ul>
+<h2 id="p-gina-2">Página 2</h2>
+<ul>
+<li>Lista de usuários cadastrados
+<em>Exibir apenas os nomes completos em lista e ao clicar em um nome ir para página 3.</em></li>
+</ul>
+<h2 id="p-gina-3">Página 3</h2>
+<ul>
+<li>Detalhes do usuário selecionado</li>
+<li>Exibir todos os dados do usuário</li>
+</ul>
+<hr>
+<h2 id="descri-o-do-formul-rio">DESCRIÇÃO DO FORMULÁRIO</h2>
+<p>O formulário irá solicitar os seguintes campos do usuário.</p>
+<p><h3>Dados de usuário</h3>
+Nome Completo [STRING] <br />
+Data de Nascimento [DATETIME] <br />
+CPF [STRING] <br />
+Email [STRING]</p>
+<p><h3>Dados de endereço</h3>
+CEP [STRING] <br />
+Logradouro [STRING] <br />
+Complemento [STRING] <br />
+Bairro [STRING] <br />
+Cidade [STRING] <br />
+Estado [STRING]</p>
+<h2>Observações</h2>
+<p>Adicionar uma validação de campos em javascript ou jquery no formulário de cadastro de usuário, todos os campos são obrigatórios.</p>
+<p>Ao preencher o CEP as demais informações de endereço deverão ser preenchidas automaticamente.
+<a href="https://viacep.com.br/">https://viacep.com.br/</a></p>
+<p>Ao salvar o formulário, salvar as informações em banco. UTILIZAR ENTITY FRAMEWORK
+Utilizar duas tabelas, uma tabela Usuários para salvar os dados de um usuário e uma tabela Endereços para salvar os dados de endereço.
+A associação neste caso é de 1:1.</p>
+<p>Hospedar o código em um repositório público no GitHub e enviar o link.</p>

@@ -17,7 +17,6 @@ namespace HiringSonda.Infra.Mapping
 
             builder.HasOne(y => y.addressUser)
                     .WithOne(z => z.user);
-            //.HasForeignKey<AddressUser>(b => b.IDUser);
 
             builder.ToTable("User");
         }

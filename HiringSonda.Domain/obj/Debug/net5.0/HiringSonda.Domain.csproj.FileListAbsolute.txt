@@ -22,3 +22,15 @@ D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSond
 D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\ref\HiringSonda.Domain.dll
 D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.pdb
 D:\Projeto\Nova pasta\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.csproj.AssemblyReference.cache
+D:\Projeto\HiringSonda\HiringSonda.Domain\bin\Debug\net5.0\HiringSonda.Domain.deps.json
+D:\Projeto\HiringSonda\HiringSonda.Domain\bin\Debug\net5.0\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\HiringSonda.Domain\bin\Debug\net5.0\ref\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\HiringSonda.Domain\bin\Debug\net5.0\HiringSonda.Domain.pdb
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.csproj.AssemblyReference.cache
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.AssemblyInfoInputs.cache
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.AssemblyInfo.cs
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.csproj.CoreCompileInputs.cache
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\ref\HiringSonda.Domain.dll
+D:\Projeto\HiringSonda\HiringSonda.Domain\obj\Debug\net5.0\HiringSonda.Domain.pdb

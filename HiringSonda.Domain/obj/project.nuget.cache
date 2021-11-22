@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CHi2wtdJvEs34coIs4KdVYokIFZ7g9rcQ5nJDAG909O4ixAkAbzn5FraKk/cgrOsgzUAEgInHIhwK7hpDi7q5Q==",
+  "dgSpecHash": "gxnWwWc0u1KQEeCmt29JPyWgh7UHHI9C4Y6XLlY5S0TfQPorJqR+vEL+J/+muyn4kHfR0HURdWjHeEV+vZHYMw==",
   "success": true,
-  "projectFilePath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
+  "projectFilePath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

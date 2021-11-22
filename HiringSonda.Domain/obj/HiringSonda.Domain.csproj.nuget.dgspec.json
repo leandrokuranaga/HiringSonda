@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {}
+    "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
+    "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
+        "projectUniqueName": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
         "projectName": "HiringSonda.Domain",
-        "projectPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
+        "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\obj\\",
+        "outputPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

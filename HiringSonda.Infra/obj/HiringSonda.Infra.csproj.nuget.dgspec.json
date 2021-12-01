@@ -1,35 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {}
+    "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {}
   },
   "projects": {
-    "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
+    "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
         "projectName": "HiringSonda.Domain",
-        "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\obj\\",
+        "projectPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj",
+        "packagesPath": "C:\\Users\\lesku\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\lesku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/itstransdata/_packaging/itstransdata/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -65,39 +58,32 @@
         }
       }
     },
-    "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
+    "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
+        "projectUniqueName": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
         "projectName": "HiringSonda.Infra",
-        "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
-        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\obj\\",
+        "projectPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj",
+        "packagesPath": "C:\\Users\\lesku\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\lesku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/itstransdata/_packaging/itstransdata/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
-                "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj"
+              "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj"
               }
             }
           }

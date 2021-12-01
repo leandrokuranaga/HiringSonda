@@ -23,8 +23,8 @@ namespace HiringSonda
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Context>(opt => opt.UseSqlServer(Configuration.GetConnectionString("MyConn")));
-            services.AddScoped<Context, Context>();
+            services.AddDbContext<ContextDatabase>(opt => opt.UseSqlServer(Configuration.GetConnectionString("MyConn")));
+            services.AddScoped<ContextDatabase, ContextDatabase>();
             services.AddScoped<IUserRepository, UserRepository>();
         }
 

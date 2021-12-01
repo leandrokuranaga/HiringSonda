@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace HiringSonda.Infra.Context
 {
-    public class Context : DbContext
+    public class ContextDatabase : DbContext
     {      
-        public Context(DbContextOptions op) : base(op)
+        public ContextDatabase(DbContextOptions op) : base(op)
         {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
             ChangeTracker.AutoDetectChangesEnabled = false;
@@ -25,7 +25,7 @@ namespace HiringSonda.Infra.Context
                     .Where(p => p.ClrType == typeof(string))))
                 property.SetColumnType("varchar(100)");
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(Context).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ContextDatabase).Assembly);
 
             modelBuilder.Entity<User>()
                 .HasOne(b => b.addressUser)

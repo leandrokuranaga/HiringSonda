@@ -1,54 +1,29 @@
-# Desafio Sonda  
-Código fonte de desafio do processo seletivo da Sonda
+# Aplicação
 
-# Formulário de Cadastro de Usuário
- 
-Desenvolver uma aplicação utilizando ASP.NET Core MVC, esta aplicação deverá ter três páginas.
+Veja o vídeo abaixo.
 
-## Página 1
-- Formulário de Cadastro de Usuário *
- 
-## Página 2
-- Lista de usuários cadastrados
-_Exibir apenas os nomes completos em lista e ao clicar em um nome ir para página 3._
+[![YoutubeVideo](HiringSonda/wwwroot/assets/sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
 
-## Página 3
-- Detalhes do usuário selecionado
-- Exibir todos os dados do usuário
----------------------------------------------------------------------------
- 
-## DESCRIÇÃO DO FORMULÁRIO
-O formulário irá solicitar os seguintes campos do usuário.
- 
-**Dados de usuário**  
-Nome Completo [STRING]  
-Data de Nascimento [DATETIME]  
-CPF [STRING]  
-Email [STRING]  
- 
-**Dados de endereço**  
-CEP [STRING]  
-Logradouro [STRING]  
-Complemento [STRING]  
-Bairro [STRING]  
-Cidade [STRING]  
-Estado [STRING]
-
-**Observações**
-
-Adicionar uma validação de campos em javascript ou jquery no formulário de cadastro de usuário, todos os campos são obrigatórios.
- 
-Ao preencher o CEP as demais informações de endereço deverão ser preenchidas automaticamente.
-https://viacep.com.br/
- 
-Ao salvar o formulário, salvar as informações em banco. UTILIZAR ENTITY FRAMEWORK
-Utilizar duas tabelas, uma tabela Usuários para salvar os dados de um usuário e uma tabela Endereços para salvar os dados de endereço.
-A associação neste caso é de 1:1.
- 
-Hospedar o código em um repositório público no GitHub e enviar o link.
-
-## Aplicação
-
+## Ferramentas, Banco de dados
+ ___   
 Para o uso e teste da aplicação favor utilizar o comando **git clone https://github.com/lekuranaga/HiringSonda.git**
 
-O projeto foi dividido em camadas, sendo utilizado a onion architecture, além de utilizar entity framework core juntamente com migrations.
+O ambiente utilizado para desenvolver a aplicação foi o **Windows 11.**
+
+Para o desenvolvimento foi utilizado o **SQL Server Express 2019** como banco de dados e o projeto foi desenvolvido utilizando o **Visual Studio 2022** a base criada é a **SondaLeandroKuranaga** e é configurável através do arquivo **appsettings.json**.
+
+## Projeto
+___
+
+O projeto foi dividido em camadas, sendo utilizado a **onion architecture**, além de utilizar **Entity Framework Core (Design, Relational, SqlServer, Tools)** juntamente com a migration **add-migration SondaHiring**.
+
+A camada de aplicação **(HiringSonda)** é onde está os controllers e as views.
+
+A camada de **domínio (HiringSonda.Domain)** é onde fica a regra de negócio, possui as interfaces e os models.
+
+A camada de **infra (HiringSonda.Infra)** é onde fica a parte de conexão com banco de dados, mapeamentos, migrations.
+
+### Dependências
+___
+
+A camada de **infra (HiringSonda.Infra)** possui referência ao projeto

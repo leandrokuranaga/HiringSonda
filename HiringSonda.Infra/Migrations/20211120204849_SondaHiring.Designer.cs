@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HiringSonda.Infra.Migrations
 {
-    [DbContext(typeof(Context.Context))]
+    [DbContext(typeof(Context.ContextDatabase))]
     [Migration("20211120204849_SondaHiring")]
     partial class SondaHiring
     {

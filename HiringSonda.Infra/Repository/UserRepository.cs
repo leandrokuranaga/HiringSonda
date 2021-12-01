@@ -9,9 +9,9 @@ namespace HiringSonda.Infra.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly Context.Context _context;
+        private readonly Context.ContextDatabase _context;
 
-        public UserRepository(Context.Context context)
+        public UserRepository(Context.ContextDatabase context)
         {
             _context = context;
             _context.Database.EnsureCreated();

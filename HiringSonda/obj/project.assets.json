@@ -665,18 +665,6 @@
           "build/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/5.0.12": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.12"
-        },
-        "compile": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.12": {
         "type": "package",
         "dependencies": {
@@ -2972,20 +2960,6 @@
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.5.0.12.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/5.0.12": {
-      "sha512": "bnmyVPMWFM0Olt5K0r2aWhkVb1fg3iiqO12mq786pTHxyjnH40C+GTRG2LS7k69lAPkkuj1iRHkqwN9oJtcqMw==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/5.0.12",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll",
-        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.5.0.12.nupkg.sha512",
-        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.12": {
@@ -7534,7 +7508,6 @@
       "HiringSonda.Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.12",
-      "Microsoft.EntityFrameworkCore.InMemory >= 5.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
@@ -7542,46 +7515,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leandro\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\lesku\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
+      "projectUniqueName": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
       "projectName": "HiringSonda",
-      "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
-      "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-      "outputPath": "D:\\Projeto\\HiringSonda\\HiringSonda\\obj\\",
+      "projectPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda\\HiringSonda.csproj",
+      "packagesPath": "C:\\Users\\lesku\\.nuget\\packages\\",
+      "outputPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\lesku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/itstransdata/_packaging/itstransdata/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
-              "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj"
+            "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj": {
+              "projectPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Domain\\HiringSonda.Domain.csproj"
             },
-            "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
-              "projectPath": "D:\\Projeto\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj"
+            "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj": {
+              "projectPath": "D:\\Projetos\\Nova pasta\\HiringSonda\\HiringSonda.Infra\\HiringSonda.Infra.csproj"
             }
           }
         }
@@ -7603,10 +7567,6 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
-            "target": "Package",
-            "version": "[5.0.12, )"
-          },
-          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[5.0.12, )"
           },

@@ -9,10 +9,10 @@ namespace HiringSonda.Infra.Repository
 {
     public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity, new()
     {
-        protected readonly Context.Context DB;
+        protected readonly Context.ContextDatabase DB;
         protected readonly DbSet<TEntity> dbSet;
 
-        protected Repository(Context.Context db)
+        protected Repository(Context.ContextDatabase db)
         {
             DB = db;
             dbSet = db.Set<TEntity>();

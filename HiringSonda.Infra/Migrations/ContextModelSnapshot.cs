@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HiringSonda.Infra.Migrations
 {
-    [DbContext(typeof(Context.Context))]
+    [DbContext(typeof(Context.ContextDatabase))]
     partial class ContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

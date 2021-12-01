@@ -37,7 +37,6 @@
           "HiringSonda.Infra": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.EntityFrameworkCore.Design": "5.0.12",
-          "Microsoft.EntityFrameworkCore.InMemory": "5.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
@@ -752,20 +751,6 @@
             "assemblyVersion": "5.0.12.0",
             "fileVersion": "5.0.1221.51310"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.InMemory/5.0.12": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.12"
-        },
-        "runtime": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "assemblyVersion": "5.0.12.0",
-            "fileVersion": "5.0.1221.51310"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/5.0.12": {
@@ -3676,13 +3661,6 @@
       "sha512": "sha512-ppGtADfdRv94SQhol8kbYupjjwpNrJ0V2V2jPXzM7zf9cZoDDSmlKXq4sHCdhC4L2ObD8DaykmAcgMIxPleHOg==",
       "path": "microsoft.entityframeworkcore.design/5.0.12",
       "hashPath": "microsoft.entityframeworkcore.design.5.0.12.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/5.0.12": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bnmyVPMWFM0Olt5K0r2aWhkVb1fg3iiqO12mq786pTHxyjnH40C+GTRG2LS7k69lAPkkuj1iRHkqwN9oJtcqMw==",
-      "path": "microsoft.entityframeworkcore.inmemory/5.0.12",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.5.0.12.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.12": {
       "type": "package",

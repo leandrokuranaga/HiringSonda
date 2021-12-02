@@ -19,6 +19,8 @@ O projeto foi dividido em camadas, sendo utilizado a **onion architecture**, al�
 
 A Estrutura do banco de dados na imagem abaixo.
 
+A connection string para acessar o banco **(localdb)\MSSQLLocalDB** com autenticação windows, serve para o sql server 2017 e 2019.
+
 ![Diagrama UML](HiringSonda/wwwroot/assets/Banco.png)
 
 A camada de aplicação **(HiringSonda)** é onde estão os controllers e as views.

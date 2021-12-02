@@ -2,7 +2,7 @@
 
 Veja o vídeo abaixo.
 
-[![YoutubeVideo](HiringSonda/wwwroot/assets/sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
+[![YoutubeVideo](/HiringSonda/wwwroot/assets/Sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
 
 ## Ferramentas, Banco de dados
  ___   
@@ -26,4 +26,6 @@ A camada de **infra (HiringSonda.Infra)** é onde fica a parte de conexão com b
 ### Dependências
 ___
 
-A camada de **infra (HiringSonda.Infra)** possui referência ao projeto
+* A camada de **infra (HiringSonda.Infra)** possui a dependência do projeto **domínio (HiringSonda.Domain)**.
+
+* A camada de Aplicação **(HiringSonda)** possui a dependência dos projetos **domínio (HiringSonda.Domain)** e **infra (HiringSonda.Infra)**.

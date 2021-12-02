@@ -7,6 +7,8 @@ namespace HiringSonda.Domain.Models
 {
     public class AddressUser : Entity
     {
+        [ForeignKey("User_FK")]
+        public Guid UserID { get; set; }
         [DisplayName("CEP")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string CEP { get; set; }

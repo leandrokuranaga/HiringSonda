@@ -4,16 +4,14 @@ using HiringSonda.Infra.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HiringSonda.Infra.Migrations
 {
-    [DbContext(typeof(Context.ContextDatabase))]
-    [Migration("20211120204849_SondaHiring")]
-    partial class SondaHiring
+    [DbContext(typeof(ContextDatabase))]
+    partial class ContextDatabaseModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,6 +22,7 @@ namespace HiringSonda.Infra.Migrations
             modelBuilder.Entity("HiringSonda.Domain.Models.AddressUser", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CEP")
@@ -50,7 +49,13 @@ namespace HiringSonda.Infra.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(100)");
 
+                    b.Property<Guid>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserID")
+                        .IsUnique();
 
                     b.ToTable("AddressUser");
                 });
@@ -85,7 +90,7 @@ namespace HiringSonda.Infra.Migrations
                 {
                     b.HasOne("HiringSonda.Domain.Models.User", "user")
                         .WithOne("addressUser")
-                        .HasForeignKey("HiringSonda.Domain.Models.AddressUser", "Id")
+                        .HasForeignKey("HiringSonda.Domain.Models.AddressUser", "UserID")
                         .IsRequired();
 
                     b.Navigation("user");

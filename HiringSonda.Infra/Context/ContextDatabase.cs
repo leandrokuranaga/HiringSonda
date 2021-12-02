@@ -17,9 +17,6 @@ namespace HiringSonda.Infra.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.ApplyConfiguration(new UserTypeConfiguration());
-            //modelBuilder.ApplyConfiguration(new AddressTypeConfiguration());
-
             foreach (var property in modelBuilder.Model.GetEntityTypes()
                 .SelectMany(e => e.GetProperties()
                     .Where(p => p.ClrType == typeof(string))))
@@ -30,7 +27,7 @@ namespace HiringSonda.Infra.Context
             modelBuilder.Entity<User>()
                 .HasOne(b => b.addressUser)
                 .WithOne(i => i.user)
-                .HasForeignKey<AddressUser>(i => i.Id);
+                .HasForeignKey<AddressUser>(i => i.UserID);
 
             foreach (var relationship in modelBuilder.Model.GetEntityTypes()
                                             .SelectMany(e => e.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;

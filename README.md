@@ -2,7 +2,7 @@
 
 Veja o vídeo abaixo.
 
-[![YoutubeVideo](HiringSonda/wwwroot/assets/sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
+[![YoutubeVideo](HiringSonda/wwwroot/assets/Sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
 
 ## Ferramentas, Banco de dados
  ___   
@@ -17,13 +17,19 @@ ___
 
 O projeto foi dividido em camadas, sendo utilizado a **onion architecture**, além de utilizar **Entity Framework Core (Design, Relational, SqlServer, Tools)** juntamente com a migration **add-migration SondaHiring**.
 
-A camada de aplicação **(HiringSonda)** é onde está os controllers e as views.
+A Estrutura do banco de dados na imagem abaixo.
+
+![Diagrama UML](HiringSonda/wwwroot/assets/Banco.png)
+
+A camada de aplicação **(HiringSonda)** é onde estão os controllers e as views.
 
 A camada de **domínio (HiringSonda.Domain)** é onde fica a regra de negócio, possui as interfaces e os models.
 
-A camada de **infra (HiringSonda.Infra)** é onde fica a parte de conexão com banco de dados, mapeamentos, migrations.
+A camada de **infra (HiringSonda.Infra)** é onde fica a parte de conexão com banco de dados, mapeamentos, migrations, repositórios, dbcontext.
 
 ### Dependências
 ___
 
-A camada de **infra (HiringSonda.Infra)** possui referência ao projeto
+* A camada de **infra (HiringSonda.Infra)** possui a dependência do projeto **domínio (HiringSonda.Domain)**.
+
+* A camada de Aplicação **(HiringSonda)** possui a dependência dos projetos **domínio (HiringSonda.Domain)** e **infra (HiringSonda.Infra)**.

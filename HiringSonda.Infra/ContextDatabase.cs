@@ -1,19 +1,20 @@
-﻿using HiringSonda.Domain.Models;
+﻿using HiringSonda.Domain.AdressAggregate;
+using HiringSonda.Domain.UserAggregate;
 using HiringSonda.Infra.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-namespace HiringSonda.Infra.Context
+namespace HiringSonda.Infra.Data
 {
     public class ContextDatabase : DbContext
-    {      
+    {
         public ContextDatabase(DbContextOptions op) : base(op)
         {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
             ChangeTracker.AutoDetectChangesEnabled = false;
         }
-        public DbSet<User> Users { get; set; }
-        public DbSet<AddressUser> Addresses { get; set; }
+        public DbSet<UserDomain> Users { get; set; }
+        public DbSet<AddressUserDomain> Addresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -24,10 +25,10 @@ namespace HiringSonda.Infra.Context
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ContextDatabase).Assembly);
 
-            modelBuilder.Entity<User>()
+            modelBuilder.Entity<UserDomain>()
                 .HasOne(b => b.addressUser)
                 .WithOne(i => i.user)
-                .HasForeignKey<AddressUser>(i => i.UserID);
+                .HasForeignKey<AddressUserDomain>(i => i.UserID);
 
             foreach (var relationship in modelBuilder.Model.GetEntityTypes()
                                             .SelectMany(e => e.GetForeignKeys())) relationship.DeleteBehavior = DeleteBehavior.ClientSetNull;

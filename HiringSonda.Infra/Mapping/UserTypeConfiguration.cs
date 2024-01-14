@@ -1,22 +1,26 @@
-﻿using HiringSonda.Domain.Models;
+﻿using HiringSonda.Domain.AdressAggregate;
+using HiringSonda.Domain.UserAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System;
 
 namespace HiringSonda.Infra.Mapping
 {
-    public class UserTypeConfiguration : IEntityTypeConfiguration<User>
+    public class UserTypeConfiguration : IEntityTypeConfiguration<UserDomain>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<UserDomain> builder)
         {
             builder.HasKey(x => x.Id);
 
-            builder.Property(e => e.FullName).IsRequired();
-            builder.Property(e => e.BirthDate).IsRequired();
-            builder.Property(e => e.CPF).IsRequired();
-            builder.Property(e => e.Email).IsRequired();
+            builder.Property(e => e.FullName).HasColumnType("varchar(100)").IsRequired();
+            builder.Property<DateOnly>(e => e.BirthDate).HasConversion<DateOnlyConverter>().HasColumnType("date").IsRequired();
+            builder.Property(e => e.CPF).HasColumnType("varchar(20)").IsRequired();
+            builder.Property(e => e.Email).HasColumnType("varchar(100)").IsRequired();
 
             builder.HasOne(y => y.addressUser)
-                    .WithOne(z => z.user);
+                    .WithOne(z => z.user)
+                    .HasPrincipalKey<UserDomain>(x => x.Id)
+                    .HasForeignKey<AddressUserDomain>(x => x.UserID);
 
             builder.ToTable("User");
         }

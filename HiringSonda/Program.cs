@@ -1,26 +1,71 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using HiringSonda.Infra.Repository;
+using Microsoft.EntityFrameworkCore;
+using HiringSonda.Application.Person.Services;
+using HiringSonda.Domain.UserAggregate;
+using HiringSonda.Infra.Data;
+using Microsoft.Extensions.Configuration;
 
-namespace HiringSonda
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+
+// Database Context (Update with your context and connection string)
+builder.Services.AddDbContext<ContextDatabase>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyConn")));
+
+// Repository and other service registrations
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddControllersWithViews(); // For MVC
+
+
+
+// CORS (if needed)
+builder.Services.AddCors(options =>
 {
-    public class Program
+    options.AddPolicy("AllowAllOrigins", builder =>
     {
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
+        builder.AllowAnyOrigin();
+        builder.AllowAnyHeader();
+        builder.AllowAnyMethod();
+    });
+});
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
-    }
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
 }
+
+
+
+app.UseHttpsRedirection();
+
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseCors("AllowAllOrigins");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

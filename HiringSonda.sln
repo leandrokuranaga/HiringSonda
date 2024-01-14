@@ -3,11 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda", "HiringSonda\HiringSonda.csproj", "{3273EB00-7ABD-437C-BE9B-E6A54D51A299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.API", "HiringSonda\HiringSonda.API.csproj", "{3273EB00-7ABD-437C-BE9B-E6A54D51A299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringSonda.Domain", "HiringSonda.Domain\HiringSonda.Domain.csproj", "{D0996926-0541-4BBD-9A33-A6346A40AADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Domain", "HiringSonda.Domain\HiringSonda.Domain.csproj", "{D0996926-0541-4BBD-9A33-A6346A40AADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringSonda.Infra", "HiringSonda.Infra\HiringSonda.Infra.csproj", "{2BECC2B5-7B69-433F-BEBE-A335F35A7197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Infra.Data", "HiringSonda.Infra\HiringSonda.Infra.Data.csproj", "{2BECC2B5-7B69-433F-BEBE-A335F35A7197}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Test", "HiringSonda.Test\HiringSonda.Test.csproj", "{7361D716-FDE3-4D45-9748-80B3052A3779}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Application", "HiringSonda.Application\HiringSonda.Application.csproj", "{631D1AE3-6668-4B4C-A997-EE92C43FE987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringSonda.Infra.CrossCutting.IoC", "HiringSonda.Infra.CrossCutting.Utils\HiringSonda.Infra.CrossCutting.IoC.csproj", "{12DBEEED-A5E5-4353-9013-E95268BB0191}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra Layer", "Infra Layer", "{92D746F8-DB67-4CD2-8DE4-BEAB4D54058F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api Layer", "Api Layer", "{776DD468-4388-4338-A858-59C4377CF7CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Layer", "Application Layer", "{4FEF302C-22CE-438B-A07D-E557A2226452}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Layer", "Domain Layer", "{4C3931CC-F6E6-4D8D-BB0A-342EC3B90B90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B31784B1-9127-4CF7-A149-D5AC6606766F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +43,29 @@ Global
 		{2BECC2B5-7B69-433F-BEBE-A335F35A7197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BECC2B5-7B69-433F-BEBE-A335F35A7197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BECC2B5-7B69-433F-BEBE-A335F35A7197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7361D716-FDE3-4D45-9748-80B3052A3779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7361D716-FDE3-4D45-9748-80B3052A3779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7361D716-FDE3-4D45-9748-80B3052A3779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7361D716-FDE3-4D45-9748-80B3052A3779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{631D1AE3-6668-4B4C-A997-EE92C43FE987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{631D1AE3-6668-4B4C-A997-EE92C43FE987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{631D1AE3-6668-4B4C-A997-EE92C43FE987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{631D1AE3-6668-4B4C-A997-EE92C43FE987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12DBEEED-A5E5-4353-9013-E95268BB0191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12DBEEED-A5E5-4353-9013-E95268BB0191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12DBEEED-A5E5-4353-9013-E95268BB0191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12DBEEED-A5E5-4353-9013-E95268BB0191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3273EB00-7ABD-437C-BE9B-E6A54D51A299} = {776DD468-4388-4338-A858-59C4377CF7CE}
+		{D0996926-0541-4BBD-9A33-A6346A40AADA} = {4C3931CC-F6E6-4D8D-BB0A-342EC3B90B90}
+		{2BECC2B5-7B69-433F-BEBE-A335F35A7197} = {92D746F8-DB67-4CD2-8DE4-BEAB4D54058F}
+		{7361D716-FDE3-4D45-9748-80B3052A3779} = {B31784B1-9127-4CF7-A149-D5AC6606766F}
+		{631D1AE3-6668-4B4C-A997-EE92C43FE987} = {4FEF302C-22CE-438B-A07D-E557A2226452}
+		{12DBEEED-A5E5-4353-9013-E95268BB0191} = {92D746F8-DB67-4CD2-8DE4-BEAB4D54058F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0853F1D-2712-4B95-91F9-10BCAD114764}

@@ -1,5 +1,6 @@
-﻿using HiringSonda.Domain.Interfaces;
-using HiringSonda.Domain.Models;
+﻿using HiringSonda.Application.Person.Services;
+using HiringSonda.Domain;
+using HiringSonda.Domain.UserAggregate;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,18 +12,22 @@ namespace HiringSonda.Controllers
     public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger;
-        private readonly IUserRepository _repository;
+        private readonly IPersonService _personService;
 
-        public UserController(ILogger<UserController> logger, IUserRepository repository)
+        public UserController(
+            ILogger<UserController> logger,
+            IPersonService personService,
+            IUserRepository userRepository
+            )
         {
             _logger = logger;
-            _repository = repository;
+            _personService = personService;
         }
 
         [HttpGet]
         public async Task<ActionResult> Index()
         {
-            var allUsers = await _repository.GetAllUsers();
+            var allUsers = await _personService.GetAllUsers();
             return View("~/Views/User/Index.cshtml", allUsers);
         }
 
@@ -32,17 +37,23 @@ namespace HiringSonda.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Register(User user)
+        public async Task<ActionResult> Register(UserDomain user)
         {
-            await _repository.RegisterAddress(user);
-            
-            return View("~/Views/Home/Index.cshtml");
+            try
+            {
+                await _personService.RegisterAddress(user);
+                return View("~/Views/Home/Index.cshtml");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while registering the address");
+            }
         }
 
         [HttpGet]
-        public async Task<ActionResult> Details(Guid id)
+        public async Task<ActionResult> Details(int id)
         {
-            var user = await _repository.GetAddressById(id);
+            var user = await _personService.GetAddressById(id);
 
             if (user == null)
             {

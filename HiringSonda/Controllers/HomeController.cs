@@ -1,10 +1,12 @@
-﻿using HiringSonda.Domain.Models;
+﻿using HiringSonda.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace HiringSonda.Controllers
 {
+    [ApiController]
+    [Route("/")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -14,11 +16,13 @@ namespace HiringSonda.Controllers
             _logger = logger;
         }
 
+        [HttpGet("challenge")]
         public IActionResult Challenge()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();

@@ -1,14 +1,18 @@
-﻿using System;
+﻿using Abp.Domain.Entities;
+using HiringSonda.Domain.UserAggregate;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HiringSonda.Domain.Models
+namespace HiringSonda.Domain.AdressAggregate
 {
-    public class AddressUser : Entity
+    public class AddressUserDomain : Entity
     {
+        [DisplayName("Id")]
+        [Required]
+        public int Id { get; set; }
         [ForeignKey("User_FK")]
-        public Guid UserID { get; set; }
+        public int UserID { get; set; }
         [DisplayName("CEP")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string CEP { get; set; }
@@ -28,6 +32,6 @@ namespace HiringSonda.Domain.Models
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string State { get; set; }
 
-        public User user { get; set; }
+        public UserDomain user { get; set; }
     }
 }

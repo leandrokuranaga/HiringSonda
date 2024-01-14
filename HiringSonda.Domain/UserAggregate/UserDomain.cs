@@ -1,25 +1,39 @@
-﻿using System;
+﻿using Abp.Domain.Entities;
+using HiringSonda.Domain.AdressAggregate;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HiringSonda.Domain.Models
+namespace HiringSonda.Domain.UserAggregate
 {
-    public class User : Entity
+    public class UserDomain : Entity
     {
+        [DisplayName("Id")]
+        [Required]
+        public int Id { get; set; }
         [DisplayName("Nome Completo")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string FullName { get; set; }
         [DisplayName("Data Nascimento")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
-        public DateTime BirthDate { get; set; }
+        public DateOnly BirthDate { get; set; }
         [DisplayName("CPF")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string CPF { get; set; }
         [DisplayName("Email")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string Email { get; set; }
-        public AddressUser addressUser { get; set; }
+        public AddressUserDomain addressUser { get; set; }
+    }
+
+    public class DateOnlyConverter : ValueConverter<DateOnly, DateTime>
+    {
+        public DateOnlyConverter()
+            : base(dateOnly =>
+                    dateOnly.ToDateTime(TimeOnly.MinValue),
+                dateTime => DateOnly.FromDateTime(dateTime))
+        { }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace HiringSonda.Domain.Models
+namespace HiringSonda.Domain
 {
     public class ErrorViewModel
     {

@@ -43,3 +43,18 @@ D:\Projetos\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSond
 D:\Projetos\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.dll
 D:\Projetos\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\ref\HiringSonda.Infra.dll
 D:\Projetos\Nova pasta\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.pdb
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Infra.deps.json
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Infra.dll
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Infra.pdb
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Domain.dll
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\bin\Debug\net5.0\HiringSonda.Domain.pdb
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.csproj.AssemblyReference.cache
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.AssemblyInfoInputs.cache
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.AssemblyInfo.cs
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.csproj.CoreCompileInputs.cache
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.csproj.CopyComplete
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.dll
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\refint\HiringSonda.Infra.dll
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\HiringSonda.Infra.pdb
+C:\Users\lesku\Documents\Projetos\HiringSonda\HiringSonda.Infra\obj\Debug\net5.0\ref\HiringSonda.Infra.dll

@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.API", "HiringSonda\HiringSonda.API.csproj", "{3273EB00-7ABD-437C-BE9B-E6A54D51A299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.API", "src\HiringSonda.Api\HiringSonda.API.csproj", "{3273EB00-7ABD-437C-BE9B-E6A54D51A299}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Domain", "HiringSonda.Domain\HiringSonda.Domain.csproj", "{D0996926-0541-4BBD-9A33-A6346A40AADA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Domain", "src\HiringSonda.Domain\HiringSonda.Domain.csproj", "{D0996926-0541-4BBD-9A33-A6346A40AADA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Infra.Data", "HiringSonda.Infra\HiringSonda.Infra.Data.csproj", "{2BECC2B5-7B69-433F-BEBE-A335F35A7197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Infra.Data", "src\HiringSonda.Infra.Data\HiringSonda.Infra.Data.csproj", "{2BECC2B5-7B69-433F-BEBE-A335F35A7197}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Test", "HiringSonda.Test\HiringSonda.Test.csproj", "{7361D716-FDE3-4D45-9748-80B3052A3779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Tests", "src\HiringSonda.Tests\HiringSonda.Tests.csproj", "{7361D716-FDE3-4D45-9748-80B3052A3779}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Application", "HiringSonda.Application\HiringSonda.Application.csproj", "{631D1AE3-6668-4B4C-A997-EE92C43FE987}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiringSonda.Application", "src\HiringSonda.Application\HiringSonda.Application.csproj", "{631D1AE3-6668-4B4C-A997-EE92C43FE987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringSonda.Infra.CrossCutting.IoC", "HiringSonda.Infra.CrossCutting.Utils\HiringSonda.Infra.CrossCutting.IoC.csproj", "{12DBEEED-A5E5-4353-9013-E95268BB0191}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiringSonda.Infra.CrossCutting.IoC", "src\HiringSonda.Infra.CrossCutting.IoC\HiringSonda.Infra.CrossCutting.IoC.csproj", "{12DBEEED-A5E5-4353-9013-E95268BB0191}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra Layer", "Infra Layer", "{92D746F8-DB67-4CD2-8DE4-BEAB4D54058F}"
 EndProject

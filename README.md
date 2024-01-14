@@ -2,7 +2,7 @@
 
 Veja o vídeo abaixo.
 
-[![YoutubeVideo](HiringSonda/wwwroot/assets/Sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
+[![YoutubeVideo](src/HiringSonda.Api/wwwroot/assets/Sonda.png)](https://www.youtube.com/watch?v=pjoMfjlkklA)
 
 ## Ferramentas, Banco de dados
  ___   
@@ -21,7 +21,7 @@ A Estrutura do banco de dados na imagem abaixo.
 
 A connection string para acessar o banco **(localdb)\MSSQLLocalDB** com autenticação windows, serve para o sql server 2017 e 2019.
 
-![Diagrama UML](HiringSonda/wwwroot/assets/Banco.png)
+![Diagrama UML](src/HiringSonda.Api/wwwroot/assets/Banco.png)
 
 A camada de aplicação **(HiringSonda)** é onde estão os controllers e as views.
 

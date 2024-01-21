@@ -16,41 +16,34 @@ namespace HiringSonda.Controllers
 
         public UserController(
             ILogger<UserController> logger,
-            IPersonService personService,
-            IUserRepository userRepository
+            IPersonService personService
             )
         {
             _logger = logger;
             _personService = personService;
         }
 
-        [HttpGet]
+        [HttpGet("all-customers")]
         public async Task<ActionResult> Index()
         {
             var allUsers = await _personService.GetAllUsers();
             return View("~/Views/User/Index.cshtml", allUsers);
         }
 
+        [HttpGet("page")]
         public IActionResult Register()
         {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost("register")]
         public async Task<ActionResult> Register(UserDomain user)
         {
-            try
-            {
-                await _personService.RegisterAddress(user);
-                return View("~/Views/Home/Index.cshtml");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "An error occurred while registering the address");
-            }
+            await _personService.RegisterAddress(user);
+            return View("~/Views/Home/Index.cshtml");            
         }
 
-        [HttpGet]
+        [HttpGet("details")]
         public async Task<ActionResult> Details(int id)
         {
             var user = await _personService.GetAddressById(id);

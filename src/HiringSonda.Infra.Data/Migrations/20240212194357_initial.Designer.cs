@@ -7,29 +7,35 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace HiringSonda.Infra.Migrations
+#nullable disable
+
+namespace HiringSonda.Infra.Data.Migrations
 {
     [DbContext(typeof(ContextDatabase))]
-    [Migration("20211202005127_SondaHiring")]
-    partial class SondaHiring
+    [Migration("20240212194357_initial")]
+    partial class initial
     {
+        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.12")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "8.0.1")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            modelBuilder.Entity("HiringSonda.Domain.Models.AddressUser", b =>
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("HiringSonda.Domain.AdressAggregate.AddressUserDomain", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CEP")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(30)");
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -51,29 +57,31 @@ namespace HiringSonda.Infra.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(100)");
 
-                    b.Property<Guid>("UserID")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("UserID")
                         .IsUnique();
 
-                    b.ToTable("AddressUser");
+                    b.ToTable("AddressUser", (string)null);
                 });
 
-            modelBuilder.Entity("HiringSonda.Domain.Models.User", b =>
+            modelBuilder.Entity("HiringSonda.Domain.UserAggregate.UserDomain", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("BirthDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date");
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(20)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -85,20 +93,20 @@ namespace HiringSonda.Infra.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("User", (string)null);
                 });
 
-            modelBuilder.Entity("HiringSonda.Domain.Models.AddressUser", b =>
+            modelBuilder.Entity("HiringSonda.Domain.AdressAggregate.AddressUserDomain", b =>
                 {
-                    b.HasOne("HiringSonda.Domain.Models.User", "user")
+                    b.HasOne("HiringSonda.Domain.UserAggregate.UserDomain", "user")
                         .WithOne("addressUser")
-                        .HasForeignKey("HiringSonda.Domain.Models.AddressUser", "UserID")
+                        .HasForeignKey("HiringSonda.Domain.AdressAggregate.AddressUserDomain", "UserID")
                         .IsRequired();
 
                     b.Navigation("user");
                 });
 
-            modelBuilder.Entity("HiringSonda.Domain.Models.User", b =>
+            modelBuilder.Entity("HiringSonda.Domain.UserAggregate.UserDomain", b =>
                 {
                     b.Navigation("addressUser");
                 });

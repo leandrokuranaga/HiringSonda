@@ -11,22 +11,19 @@ using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Database Context (Update with your context and connection string)
 builder.Services.AddDbContext<ContextDatabase>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConn")));
 
-// Repository and other service registrations
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddControllersWithViews(); // For MVC
 
 
+builder.Services.AddControllersWithViews(); 
 
 // CORS (if needed)
 builder.Services.AddCors(options =>
@@ -41,10 +38,14 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
 
 

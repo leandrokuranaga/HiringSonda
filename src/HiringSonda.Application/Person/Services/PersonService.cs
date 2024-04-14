@@ -3,14 +3,9 @@ using HiringSonda.Domain.UserAggregate;
 
 namespace HiringSonda.Application.Person.Services
 {
-    public class PersonService : IPersonService
+    public class PersonService(IUserRepository userRepository) : IPersonService
     {
-        private readonly IUserRepository _userRepository;
-
-        public PersonService(IUserRepository userRepository)
-        {
-            _userRepository = userRepository;
-        }
+        private readonly IUserRepository _userRepository = userRepository;
 
         public async Task<UserDomain> GetUser(int id)
         {
@@ -22,25 +17,14 @@ namespace HiringSonda.Application.Person.Services
         {
             var users = await _userRepository.GetAllAsync();
 
-            List<UserResponse> result = [];
-
-            foreach (var user in users)
-            {
-                UserResponse userResponse = new UserResponse
-                {
-                    FullName = user.FullName,
-                    Id = user.Id
-                };
-
-                result.Add(userResponse);
-            }
+            var result = users.Select(user => (UserResponse)user).ToList();
 
             return result;
         }
 
         public async Task RegisterAddress(UserDomain user)
         {
-            await _userRepository.RegisterAddress(user);
+            await _userRepository.InsertOrUpdateAsync(user);
         }
 
         public async Task<UserDomain> GetAddressById(int id)

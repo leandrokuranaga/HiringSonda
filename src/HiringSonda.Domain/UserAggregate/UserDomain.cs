@@ -25,7 +25,7 @@ namespace HiringSonda.Domain.UserAggregate
         [DisplayName("Email")]
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string Email { get; set; }
-        public AddressUserDomain addressUser { get; set; }
+        public AddressUserDomain AddressUser { get; set; }
     }
 
     public class DateOnlyConverter : ValueConverter<DateOnly, DateTime>

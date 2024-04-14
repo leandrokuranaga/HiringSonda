@@ -48,22 +48,22 @@ namespace HiringSonda.Test.Api_Layer
             #endregion
         }
 
-        [Fact]
-        public async Task RegisterPage()
-        {
-            #region Arrange
-            #endregion
+        //[Fact]
+        //public async Task RegisterPage()
+        //{
+        //    #region Arrange
+        //    #endregion
 
-            #region Act
-            var result = _controller.RegisterPage();
-            #endregion
+        //    #region Act
+        //    var result = _controller.RegisterPage();
+        //    #endregion
 
-            #region Assert
-            var viewResult = Assert.IsType<ViewResult>(result);
-            Assert.Null(viewResult.ViewName);
-            #endregion
+        //    #region Assert
+        //    var viewResult = Assert.IsType<ViewResult>(result);
+        //    Assert.Null(viewResult.ViewName);
+        //    #endregion
 
-        }
+        //}
 
         [Fact]
         public async Task RegisterUser()

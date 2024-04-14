@@ -17,8 +17,8 @@ namespace HiringSonda.Infra.Mapping
             builder.Property(e => e.CPF).HasColumnType("varchar(20)").IsRequired();
             builder.Property(e => e.Email).HasColumnType("varchar(100)").IsRequired();
 
-            builder.HasOne(y => y.addressUser)
-                    .WithOne(z => z.user)
+            builder.HasOne(y => y.AddressUser)
+                    .WithOne(z => z.User)
                     .HasPrincipalKey<UserDomain>(x => x.Id)
                     .HasForeignKey<AddressUserDomain>(x => x.UserID);
 

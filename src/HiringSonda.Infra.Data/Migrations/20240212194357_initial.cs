@@ -1,20 +1,25 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace HiringSonda.Infra.Migrations
+#nullable disable
+
+namespace HiringSonda.Infra.Data.Migrations
 {
-    public partial class SondaHiring : Migration
+    /// <inheritdoc />
+    public partial class initial : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
                 name: "User",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     FullName = table.Column<string>(type: "varchar(100)", nullable: false),
-                    BirthDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CPF = table.Column<string>(type: "varchar(100)", nullable: false),
+                    BirthDate = table.Column<DateTime>(type: "date", nullable: false),
+                    CPF = table.Column<string>(type: "varchar(20)", nullable: false),
                     Email = table.Column<string>(type: "varchar(100)", nullable: false)
                 },
                 constraints: table =>
@@ -26,9 +31,10 @@ namespace HiringSonda.Infra.Migrations
                 name: "AddressUser",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CEP = table.Column<string>(type: "varchar(100)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserID = table.Column<int>(type: "int", nullable: false),
+                    CEP = table.Column<string>(type: "varchar(30)", nullable: false),
                     Street = table.Column<string>(type: "varchar(100)", nullable: false),
                     Complement = table.Column<string>(type: "varchar(100)", nullable: false),
                     Neighborhood = table.Column<string>(type: "varchar(100)", nullable: false),
@@ -42,8 +48,7 @@ namespace HiringSonda.Infra.Migrations
                         name: "FK_AddressUser_User_UserID",
                         column: x => x.UserID,
                         principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -53,6 +58,7 @@ namespace HiringSonda.Infra.Migrations
                 unique: true);
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  hiringsonda.api:
+    image: ${DOCKER_REGISTRY-}hiringsondaapi
+    build:
+      context: .
+      dockerfile: src/HiringSonda.Api/Dockerfile

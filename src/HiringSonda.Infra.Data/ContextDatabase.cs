@@ -26,8 +26,8 @@ namespace HiringSonda.Infra.Data
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ContextDatabase).Assembly);
 
             modelBuilder.Entity<UserDomain>()
-                .HasOne(b => b.addressUser)
-                .WithOne(i => i.user)
+                .HasOne(b => b.AddressUser)
+                .WithOne(i => i.User)
                 .HasForeignKey<AddressUserDomain>(i => i.UserID);
 
             foreach (var relationship in modelBuilder.Model.GetEntityTypes()

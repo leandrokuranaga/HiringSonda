@@ -15,7 +15,6 @@ namespace HiringSonda.Infra.Repository
         {
             _context = context;
             _context.Database.EnsureCreated();
-
         }
 
         public async Task<UserDomain> GetAddressById(int id)
@@ -23,16 +22,10 @@ namespace HiringSonda.Infra.Repository
             var address = await _context
                                 .Users
                                 .AsNoTracking()
-                                .Include(e => e.addressUser)
+                                .Include(e => e.AddressUser)
                                 .FirstOrDefaultAsync(p => p.Id == id);
 
             return address;
-        }
-
-        public async Task RegisterAddress(UserDomain user)
-        {
-            await _context.Users.AddAsync(user);
-            _context.SaveChanges();
         }
     }
 }

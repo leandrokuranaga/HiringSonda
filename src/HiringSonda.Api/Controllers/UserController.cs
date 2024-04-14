@@ -9,19 +9,13 @@ using System.Threading.Tasks;
 
 namespace HiringSonda.Controllers
 {
-    public class UserController : Controller
+    public class UserController(
+        ILogger<UserController> logger,
+        IPersonService personService
+            ) : Controller
     {
-        private readonly ILogger<UserController> _logger;
-        private readonly IPersonService _personService;
-
-        public UserController(
-            ILogger<UserController> logger,
-            IPersonService personService
-            )
-        {
-            _logger = logger;
-            _personService = personService;
-        }
+        private readonly ILogger<UserController> _logger = logger;
+        private readonly IPersonService _personService = personService;
 
         [HttpGet("all-customers")]
         public async Task<ActionResult> Index()

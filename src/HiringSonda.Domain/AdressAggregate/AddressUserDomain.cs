@@ -32,6 +32,6 @@ namespace HiringSonda.Domain.AdressAggregate
         [Required(ErrorMessage = "O campo {0} precisa ser preenchido")]
         public string State { get; set; }
 
-        public UserDomain user { get; set; }
+        public UserDomain User { get; set; }
     }
 }
